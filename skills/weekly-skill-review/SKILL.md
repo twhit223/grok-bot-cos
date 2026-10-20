@@ -1,7 +1,9 @@
 ---
 name: weekly-skill-review
 description: >-
-  Use this for a periodic review of user-created skills, or when the user asks to audit skills for bloat, quality-bar gaps, or missing data sources. Flag proposed edits; do not auto-edit other skills.
+  Use this for a periodic review of user-created skills, or when the user asks
+  to audit skills for bloat, quality-bar gaps, or missing data sources. Flag
+  proposed edits; do not auto-edit other skills.
 ---
 
 Use this for a periodic review of user-created skills, or when the user asks to audit skills. Flag proposed edits. Do not edit other skills until the user approves a flagged change.

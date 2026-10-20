@@ -1,10 +1,11 @@
 ---
 name: automation-quality-bar
 description: >-
-  Use this when proposing, designing, launching, or critiquing any automated task, bot workflow, skill, or routine for the user.
+  Use this when proposing, designing, launching, or critiquing any automated
+  task, bot workflow, skill, or routine for the user.
 ---
 
-Use this whenever you propose, design, launch, or critique an automated task, bot workflow, skill, or routine for the user or your company.
+Use this whenever you propose, design, launch, or critique an automated task, bot workflow, skill, or routine for the user or your organization.
 
 Before the automation ships (or before you recommend shipping it), answer all three in writing:
 

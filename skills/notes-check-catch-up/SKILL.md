@@ -1,7 +1,9 @@
 ---
 name: notes-check-catch-up
 description: >-
-  Use this when the user manually asks to run a missed meeting notes-check — find the overdue one-shot (or run from meeting title/time), process notes, then delete the one-shot. No automatic catch-up routine.
+  Use this when the user manually asks to run a missed meeting notes-check —
+  find the overdue one-shot (or run from meeting title/time), process notes,
+  then delete the one-shot. No automatic catch-up routine.
 ---
 
 # Notes-check catch-up (manual)
