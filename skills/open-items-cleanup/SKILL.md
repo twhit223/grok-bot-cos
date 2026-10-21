@@ -1,7 +1,11 @@
 ---
 name: open-items-cleanup
 description: >-
-  Use this when triaging or cleaning personal Open Items: rewrite vague rows, cut seed leftovers, route discussion to 1:1 agendas, send team work to Linear, and set Waiting only when blocked.
+  Use this when triaging or cleaning personal Open Items, or before ANY Open
+  Items status (briefs, midday check, "what's left open"): run the inbox +
+  today's-work reconcile first, then rewrite vague rows, cut seed leftovers,
+  route discussion to 1:1 agendas, send team work to Linear, and set Waiting
+  only when blocked.
 ---
 
 # Open Items Cleanup
@@ -17,9 +21,25 @@ Every non-Done Open Item should answer: **what does the user do next, and what d
 ## Inputs
 
 - Open Items database (or dashboard view of non-Done rows)
-- Optional: recent meeting notes, Slack, Linear issues linked in Notes
+- **Required:** email and Slack since the last reconcile (see Inbox reconcile below)
+- **Required:** work finished in chat with the user today (drafts sent, packages delivered, decisions made)
+- Optional: recent meeting notes, Linear issues linked in Notes
 - Optional: Slack name roster / people directory (resolve misspellings before writing names)
 - Known counterpart 1:1 prep themes (recurring discussion topics)
+
+## Inbox reconcile (required before any Open Items status)
+
+Run this before every brief, midday check, cleanup pass, or "what's left open?" answer. Notion status alone is never the truth. Lesson 2026-10-20: a status listed an item already subsumed by work sent that day, an item a colleague had already answered by email, and missed a new doc and a partner meeting ask.
+
+Window: since the last reconcile (morning brief covers overnight; midday covers morning; EoD covers afternoon; ad hoc covers today).
+
+1. **Today's work in chat.** List what the user and CoS finished today (sent emails/DMs, delivered packages, locked decisions). Any Open Item that work covers or subsumes -> **close** with reason. Don't ask the user to confirm the obvious.
+2. **Email.** Search the user's inbox and threads they're on in the window, including replies by teammates on threads the user owns. If someone else already answered or did the thing an Open Item asks -> **close** with reason + thread. If a message asks the user for something new (a reply, review, decision, meeting) -> flag as **Open** (propose a new row).
+3. **Slack.** Search mentions of the user, their DMs, group DMs, Slack Connect partner channels, and deal threads (e.g. the BD/GTM channel) in the window. Same rules: close what's resolved; flag new asks (doc shared "for you to review/send", "can we chat / share a scheduling link", questions tagged to the user).
+4. **Waiting rows.** For each Waiting item, check whether the named gate replied. If so, flip to the user's next action (or close).
+5. **Report** as three short lists: **Closed** (with reason), **New asks** (who, what, link, proposed Open Item), **Updated**. Skip FYI-only traffic (rule 10) and automated mail (builds, receipts).
+
+Apply closes the user already implied without asking. Ask before adding new rows only when ownership is unclear; otherwise add them with Source = the message link.
 
 ## Status meanings
 
@@ -85,5 +105,40 @@ Open Items must show **everything on the user’s plate** — personal next step
 
 ### 9. Seed vs ongoing
 
-(Template excerpt: remaining steps follow the same conventions—generalize channel/repo names from memory; never invent commitments; ask before external posts.)
+- **Seed leftovers** (bulk import, opaque titles, empty Notes) often lack user context. Confirm origin/meaning before keeping; prefer cut when vague.
+- **Ongoing ops** (from a just-processed meeting) should already have clear provenance; apply the same verb/Waiting/agenda rules without treating them as seed noise.
 
+### 10. FYI / informing is not progress
+
+- If the user only **informed** someone about an existing plan (no new decision, no new user next step, no date change they own), that is **not** an Open Item update.
+- Do not rewrite Notes, move Due, or mark Updated just because the topic was mentioned in a meeting.
+- Optional one-line in Notes (“Informed X on <date> — FYI only”) only when useful for provenance; default is leave the row alone and omit it from Updated.
+- Lesson 2026-09-10: a partner integration was wrongly rewritten after the user informed a counterpart; reverted.
+
+## Cleanup pass procedure
+
+Run the Inbox reconcile first. Then work one non-Done item at a time (or a small batch the user is walking with you).
+
+For each item:
+
+1. **Read** Name, Status, Waiting on, Due, Notes, Source.
+2. **Classify**: keep / rewrite / Waiting / move to agenda / move to Linear / cut.
+3. **Ask the user** when the call is consequential or only they know (keep vs cut, who owns a gate, whether something is already done). Prefer a short question with real options.
+4. **Apply** the change in Notion immediately after their call.
+5. **Record** in Notes why it was closed or rewritten (one sentence + link).
+6. Continue until Inbox is empty and every remaining row passes the verb test.
+
+Do not silently close or rewrite without a reason the user can see in Notes.
+
+## After cleanup (related work, not this skill’s body)
+
+- Patch meeting notes-check to **reconcile existing Open Items before adding**, then report **Added / Updated / Closed** with reasons. Apply rule 10 (FYI ≠ Updated).
+- Optional later: finite Slack watchers for Waiting items whose gate is a channel/mention (propose separately; do not invent watchers inside this skill).
+
+## Quality bar
+
+Before ending a cleanup pass or any Open Items status:
+
+1. How do we know the board is good? Every non-Done row has a clear verb, Waiting rows name a gate, and nothing listed as open was already done today or answered by someone else.
+2. How do we make it better next time? Every miss the user catches (stale row, missed inbound ask) becomes a dated lesson in the Inbox reconcile section.
+3. Where is friction? User confirms keep/cut/agenda/Linear on ambiguous items; never silent mass-close. Obvious closes from today's work don't need confirmation.

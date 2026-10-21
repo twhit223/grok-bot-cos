@@ -1,7 +1,9 @@
 ---
 name: set-goals
 description: >-
-  Use this when setting or refreshing quarter/month/week/day goals so task management has a clear #1 focus and maps Open Items and Linear work to outcomes.
+  Use this when setting or refreshing quarter/month/week/day goals so task
+  management has a clear #1 focus and maps Open Items and Linear work to
+  outcomes.
 ---
 
 # Set Goals
@@ -23,7 +25,7 @@ Always know the current **#1** for the active horizon when helping manage tasks.
 
 ## Specificity bar (hard)
 
-Goals must be **actions or full sentences with a done-state**, not noun phrases. Reject or push back on labels like “the product brand,” “Custody demos,” “AI,” “Launch.” Ask what gets finished, shipped, or true this month/quarter. Good shape: “Ship the product brand kit to marketing” / “Run custody demos with 5 users internally for feedback.”
+Goals must be **actions or full sentences with a done-state**, not noun phrases. Reject or push back on labels like “Product brand,” “Custody demos,” “AI,” “Launch.” Ask what gets finished, shipped, or true this month/quarter. Good shape: “Ship Product brand kit to marketing” / “Run custody demos with 5 users internally for feedback.”
 
 If the user pastes vague nouns, say what’s weak, ask for one clear sentence each, *then* ask which is month #1. Do not rank or lock noun-only goals — you will not know what to prioritize.
 
@@ -37,7 +39,7 @@ A goal requires **strategic thinking and real work** to achieve. A task is a sin
 
 Then put the booking on Open Items as P0 if it is critical. Ask what the actual goal is (prep the demo, lock the spec, write the paper, get a decision). Same pushback for “nudge X” or “reply to Y” offered as a goal.
 
-Lesson 2026-09-11: “schedule the partner kickoff” is a Notion P0 task; the week #1 was prepare the internal demo for the week.
+Lesson 2026-09-11: “schedule the ZF kickoff” is a Notion P0 task; the week #1 was prepare the internal onboarding v2 demo.
 
 ## Task systems (where work lives)
 
@@ -70,5 +72,36 @@ When prioritizing:
 
 ### 3. Month (under the quarter)
 
-(Template excerpt: remaining steps follow the same conventions—generalize channel/repo names from memory; never invent commitments; ask before external posts.)
+- For each quarter goal, propose 0–1 month outcomes that move it (not every quarter goal needs a month row every month).
+- Allow a month goal that is personal/team-process even if it was not on a public team slide — confirm with the user.
+- Enforce both bars; push back on nouns and on scheduling chores before locking.
+- Name **month #1** explicitly. Design emphasis on a slide is not priority unless the user says so.
+- Define “done looks like” in one line per month goal.
+- Confirm and write to durable memory.
 
+### 4. Week and day (lightweight; often separate briefs)
+
+- **Week:** from Open Items (This week / Waiting) + Linear due/owned work + next week’s already-booked demos (as prep, not attendance), propose this week’s #1 as a work chunk under month #1, unless a hard external work-deadline forces a swap. One sentence. Optional #2 / #3, same work bar. If the user offers “schedule a call,” push back (goals vs tasks) and do not lock it.
+- **Day:** from calendar + due Open Items + blockers, propose today’s #1. One sentence. A day’s #1 can be a hard same-day task when that is the truth; a **week** #1 cannot be “schedule a call.”
+- Default: day’s and week’s #1 advance month #1 unless the user overrides with a real work goal.
+
+### 5. Confirm and store
+
+- Show the stack back: Quarter → Month (#1 called out) → optional Week #1 / Day #1.
+- On lock, update memory. Forget superseded goal facts when replacing a whole set so old lists do not compete.
+- Mention the skill as [Set Goals](sand-workflow:set-goals) when telling the user it is saved or updated.
+
+## Using goals while managing tasks
+
+Whenever prioritizing, scrubbing Open Items, drafting a Friday wind-down, or answering “what should I focus on?”:
+
+1. Load quarter + month goals (and month #1).
+2. Rank candidate **work** by: advances month #1 → advances other month goals → hard external work-deadline exception → everything else. Scheduling chores stay on the board; they do not win week #1.
+3. Say the #1 for the timespan the user asked about (today / this week / this month).
+4. If work does not map to any goal, flag it as cut, park, or ask whether a goal should change.
+
+## Quality bar
+
+1. How do we know goals are good? Each is an action/outcome sentence with a measurable done-state, requires strategic thinking and work, and has a clear #1 at month/week/day — never a bare noun, never a booking chore as the week’s #1.
+2. How do we improve next time? After a miss (wrong #1, thrash, accepted vague goals, locked “schedule a call” even when the user said it), ask what should have won and patch this skill or the Friday wind-down.
+3. Where is friction? User locks quarter and month; assistant pushes back on nouns and on tasks-posing-as-goals; proposes week/day #1 and only asks when two true work-P0s conflict.

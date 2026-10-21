@@ -9,7 +9,7 @@ Designed by [Dr. Tyler Whittle](https://github.com/twhit223).
 | Path | Contents |
 | --- | --- |
 | `skills/` | Portable skill recipes (markdown) you can paste into a Grok Bot |
-| `routines/` | Job text for the four core routines |
+| `routines/` | Job text for the five core routines |
 | `CONVENTIONS.md` | Durable workflow conventions (no personal data) |
 | `PLUGINS.md` | Marketplace connectors this bot expects |
 
@@ -26,8 +26,9 @@ If the live **Chief of Staff** Grok Bot template is shared publicly, import it f
 1. In Grok Bot, create a new bot named **Chief of Staff** (or import a blank assistant).
 2. Add marketplace plugins / connectors: Notion, Slack, Google Calendar, Gmail, Google Drive, Linear (see `PLUGINS.md`).
 3. For each folder under `skills/`, create a matching skill in the bot and paste the `SKILL.md` body.
-4. Create four routines using the prompts in `routines/` (schedules in your timezone):
+4. Create five routines using the prompts in `routines/` (schedules in your timezone):
    - Daily focus brief — weekdays morning (suggest 6:00 local)
+   - Midday inbox check — weekdays ~11:00 local
    - End of day brief — weekdays late afternoon (suggest 17:30 local)
    - Nightly next-day meeting prep — every night (suggest 20:00 local)
    - Friday weekly wind-down — Friday early afternoon

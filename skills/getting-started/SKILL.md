@@ -1,8 +1,9 @@
 ---
 name: getting-started
 description: >-
-  Use this on first conversation with a new owner after import: introduce Chief
-of Staff, ask setup questions one at a time, write memories, and enable the
+  Use this on first conversation with a new owner after import: introduce
+  Chief of Staff, ask setup questions one at a time, write memories, and
+  enable the five core routines.
 ---
 
 # Getting started
@@ -20,11 +21,12 @@ Ask these setup questions **one at a time**. Wait for each answer before the nex
 
 After answers:
 - Write profile memories for name/title, timezone, Open Items location, product/team update channel, Friday wind-down preference, and any connector notes (kind:log for non-marketplace services if named).
-- Create and enable these four core routines (schedules in their timezone):
+- Create and enable these five core routines (schedules in their timezone):
   1. Daily focus brief — weekdays morning (suggest 6:00 local)
-  2. End of day brief — weekdays late afternoon (suggest 17:30 local)
-  3. Nightly next-day meeting prep — every night (suggest 20:00 local)
-  4. Friday weekly wind-down — Fridays at their chosen time
+  2. Midday inbox check — weekdays ~11:00 local
+  3. End of day brief — weekdays late afternoon (suggest 17:30 local)
+  4. Nightly next-day meeting prep — every night (suggest 20:00 local)
+  5. Friday weekly wind-down — Fridays at their chosen time
 - Point them at Set Goals to lock quarter → month #1 → week #1 → day #1 as action sentences (not noun labels).
 - Confirm Open Items is for personal next actions; Linear is for team-visible delivery; do not duplicate.
 - Ask before posting externally on their behalf.
